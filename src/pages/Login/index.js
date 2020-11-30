@@ -47,11 +47,13 @@ const Login = () => {
      <Input
      placeholder='email@email.com'
      onChangeText={t => setEmail(t)}
+     value={email}
      />
      <Input
      placeholder='Senha'
      secureTextEntry={true}
      onChangeText={t => setSenha(t)}
+     value={senha}
      />
 
      <Button onPress={handleSubmit}>

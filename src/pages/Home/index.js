@@ -21,6 +21,7 @@ justify-content: center;
 align-items: center;
 position: absolute;
 bottom: 6%;
+right: 6%;
 
 
 `
@@ -29,7 +30,7 @@ const Home = () => {
   const navigation = useNavigation();
   return (
       <Container>
-          <ButtonPost onPress={() => navigation.navigate('New Post')}>
+          <ButtonPost onPress={() => navigation.navigate('NewPost')}>
             <Feather name='edit-2' color='#fff' size={25}/>
           </ButtonPost>
       </Container>

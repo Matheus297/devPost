@@ -18,9 +18,23 @@ const Stack = createStackNavigator();
 function StackScreen(){
     return (
         <Stack.Navigator>
-             <Stack.Screen name='Home' component={Home} options={{headerShown: false}} />
-             <Stack.Screen name='NewPost' component={NewPost}/>
-             <Stack.Screen name='PostsUser' component={PostsUser}/>
+             <Stack.Screen 
+                name='Home' 
+                component={Home} options={{headerShown: false}} />
+             <Stack.Screen 
+                name='NewPost' 
+                component={NewPost}
+                options={{
+                    headerTintColor: "#fff",
+                    headerStyle:{
+                        backgroundColor: "#36393f"
+                    }
+                }}
+                
+                />
+             <Stack.Screen 
+                name='PostsUser' 
+                component={PostsUser}/>
         </Stack.Navigator>
     )
 }
