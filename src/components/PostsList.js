@@ -80,6 +80,7 @@ const PostsList = ({data, userId}) => {
 
 
     function formatedTimerPost(){
+        console.log(data.created)
         const timer = new Date(data.created.seconds * 1000)
         return formatDistance(
             new Date(),
