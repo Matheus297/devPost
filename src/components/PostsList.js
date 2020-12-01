@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import {formatDistance} from 'date-fns';
+import {ptBR} from 'date-fns/locale'
 import { View } from 'react-native';
 
 const Container = styled.View`
@@ -75,21 +77,37 @@ const TimePost = styled.Text`
 
 
 const PostsList = ({data, userId}) => {
+
+
+    function formatedTimerPost(){
+        const timer = new Date(data.created.seconds * 1000)
+        return formatDistance(
+            new Date(),
+            timer,
+            {
+                locale: ptBR
+            }
+        )
+      }
   return (
       <Container>
           <Header>
-              <Avatar source={require('../assets/profile.jpg')}/>
-              <Name>Matheus</Name>
+                {data.avatarUrl ? (
+                     <Avatar source={{uri: data.avatarUrl}}/>
+                ): (
+                    <Avatar source={require('../assets/profile.jpg')}/>
+                )}
+              <Name>{data?.author._data.nome}</Name>
           </Header>
           <Content>
-              <PostText>Este é meu post</PostText>
+                <PostText>{data?.postCurrent}</PostText>
           </Content>
           <Actions>
               <Like>
-                  <CountLikes>100</CountLikes>
-                  <AntDesign name="like2" size={20} color="#49C6F2" />
+                <CountLikes>{data?.likes === 0 ? '' : data?.likes}</CountLikes>
+                  <AntDesign name={data?.likes === 0 ? 'like2' : 'like1'} size={20} color="#49C6F2" />
               </Like>
-          <TimePost>há 10 minutos</TimePost>
+                <TimePost>{formatedTimerPost()}</TimePost>
           </Actions>
       </Container>
   )

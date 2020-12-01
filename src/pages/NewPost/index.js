@@ -5,7 +5,6 @@ import firestore from '@react-native-firebase/firestore';
 import {AuthContext} from '../../context/auth';
 import styled from 'styled-components';
 import { View,Text, TouchableOpacity } from 'react-native';
-import { set } from 'react-native-reanimated';
 
 
 const Container = styled.View`
@@ -60,6 +59,7 @@ const NewPost = () => {
     }
 
     let avatarUrl = null;
+    
     try {
       let response = await storage().ref('users').child(user?.uid).getDownloadURL();
       avatarUrl = response;
@@ -89,6 +89,9 @@ const NewPost = () => {
 
     navigation.goBack();
   }
+
+
+
 
   return (
       <Container>
