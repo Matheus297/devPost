@@ -10,7 +10,7 @@ import { set } from 'react-native-reanimated';
 
 const Container = styled.View`
 flex: 1;
-background-color: #404349;
+background-color: #fff;
 
 `;
 
@@ -18,14 +18,14 @@ const Input = styled.TextInput`
 background-color: transparent;
 margin: 10px;
 font-size: 20px;
-color: #fff;
+color: #000;
 `;
 
 const ButtonRight = styled.TouchableOpacity`
 padding: 5px 12px;
 margin-right: 7px;
 border-radius: 4px;
-border: 1px solid #fff;
+border: 1px solid #49C6F2;
 align-items: center;
 justify-content: center;
 
@@ -94,7 +94,7 @@ const NewPost = () => {
       <Container>
         <Input
           placeholder="Oque está pensando"
-          placeholderTextColor="#ddd" 
+          placeholderTextColor="#ccc" 
           multiline={true}
           maxLength={300}
           value={post}

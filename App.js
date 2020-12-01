@@ -11,7 +11,7 @@ const App = () => {
   return (
     <NavigationContainer>
      <AuthProvider>
-        <StatusBar backgroundColor='#36393f' barStyle='light-content' translucent={false} />
+        <StatusBar backgroundColor='#49C6F2' barStyle='light-content' translucent={false} />
         <Routes />
      </AuthProvider>
     </NavigationContainer>

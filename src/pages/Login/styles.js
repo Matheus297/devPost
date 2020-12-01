@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const Container = styled.View`
 flex: 1;
-background-color: #36393f;
+background-color: #fff;
 justify-content: center;
 align-items: center;
 
@@ -13,7 +13,7 @@ align-items: center;
 
 
 export const Title = styled.Text`
-color: #fff;
+color: #000;
 font-size: 55px;
 font-weight: bold;
 font-style: italic;
@@ -35,8 +35,9 @@ font-size: 17px;
 
 export const Button = styled.TouchableOpacity`
 width: 80%;
-background-color: #418cfd;
-margin-top: 10px;
+background-color: #fff;
+border: 1px solid #ddd;
+margin-top: 30px;
 padding: 10px;
 border-radius: 7px;
 justify-content: center;
@@ -45,7 +46,8 @@ align-items: center;
 `;
 
 export const ButtonText = styled.Text`
-color: #fff;
+color: #49C6F2;
+font-weight: bold;
 font-size: 20px;
 
 `;
@@ -59,7 +61,7 @@ justify-content: center;
 `;
 
 export const SignText = styled.Text`
-color: #ddd;
+color: #49C6F2;
 font-size: 15px;
 
 `;

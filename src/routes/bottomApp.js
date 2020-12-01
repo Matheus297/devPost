@@ -27,8 +27,13 @@ function StackScreen(){
                 options={{
                     headerTintColor: "#fff",
                     headerStyle:{
-                        backgroundColor: "#36393f"
+                        backgroundColor: "#49C6F2",
+                       
+                    },
+                    headerTitleStyle: {
+                        color: '#fff'
                     }
+                    
                 }}
                 
                 />
@@ -46,7 +51,7 @@ const BottomApp = () => {
                 keyboardHidesTabBar: true,
                 showLabel: false,
                 style:{
-                    backgroundColor: "#282225",
+                    backgroundColor: "#49C6F2",
                     borderTopWidth: 0,
                 },
                 activeTintColor: "#fff"

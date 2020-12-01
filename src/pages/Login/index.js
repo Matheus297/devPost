@@ -40,7 +40,7 @@ const Login = () => {
       <Container>
      <Title>
        Dev
-       <Text style={{color: 'red'}}>Post</Text>
+       <Text style={{color: '#49C6F2'}}>witter</Text>
      </Title>
 
 
@@ -78,7 +78,7 @@ const Login = () => {
     <Container>
     <Title>
       Dev
-      <Text style={{color: 'red'}}>Post</Text>
+      <Text style={{color: '#49C6F2'}}>witter</Text>
     </Title>
 
 

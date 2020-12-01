@@ -18,10 +18,10 @@ const Routes = () => {
                 flex: 1,
                 justifyContent: 'center',
                 alignItems: 'center',
-                backgroundColor: 'blue'
+                backgroundColor: '#fff'
             }}
             >
-                <ActivityIndicator size={20} color='red'/>
+                <ActivityIndicator size={20} color='#ccc'/>
 
             </View>
         )
